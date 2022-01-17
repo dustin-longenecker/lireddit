@@ -13,6 +13,7 @@ export default {
     },
     entities: [Post],
     dbName: 'lireddit',
+    type: 'postgresql',
     user: '',
     password: '',
     debug: !__prod__,
