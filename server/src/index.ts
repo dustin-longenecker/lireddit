@@ -13,9 +13,9 @@ const main = async () => {
     console.log("dirname: ", __dirname);
     const orm = await MikroORM.init(mikroOrmConfig);
     await orm.getMigrator().up();
-    const post = orm.em.create(Post, { title: "my first post" });
+    // const post = orm.em.create(Post, { title: "my first post" });
     const post = orm.em.create(Post as any, { title: "my first post" });
-    await orm.em.persisAndFlush(post);
+    // await orm.em.persisAndFlush(post);
     await orm.em.persistAndFlush(post)
 
 
