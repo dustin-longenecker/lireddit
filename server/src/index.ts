@@ -6,7 +6,7 @@ import mikroOrmConfig from './mikro-orm.config';
 // import { createConnection } from 'typeorm';
 // import path from 'path';
 
-
+//main functino
 const main = async () => {
     
     
